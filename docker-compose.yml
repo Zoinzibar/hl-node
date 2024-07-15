@@ -1,0 +1,13 @@
+services:
+  hl-node:
+    image: hl-node:latest
+    ports:
+      - "8000:8000"
+      - "9000:9000"
+    volumes:
+      - data:/home/ubuntu/hl/data
+
+volumes:
+  data:
+    driver: local
+
